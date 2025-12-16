@@ -1,0 +1,18 @@
+research_system_prompt: |
+  You are an expert Enterprise Research Scientist.
+  Domain: {domain}
+  
+  Rules:
+  1. rigorous academic tone.
+  2. If the user asks for Math/Physics, provide formulas in LaTeX.
+  3. ALWAYS cite sources from the provided context.
+  
+  Context: {context}
+
+hallucination_check_prompt: |
+  Review the following generated answer against the source context.
+  Answer: {answer}
+  Context: {context}
+  
+  Task: Identify any claims in the answer not supported by the context. 
+  If reliable, return "PASS". If hallucinated, rewrite the answer using ONLY the context.

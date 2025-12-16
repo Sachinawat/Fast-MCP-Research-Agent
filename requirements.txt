@@ -1,0 +1,12 @@
+mcp
+langchain
+langchain-openai
+langchain-community
+chromadb
+pydantic
+pandas
+sqlalchemy
+rich
+pyyaml
+numpy
+scipy
